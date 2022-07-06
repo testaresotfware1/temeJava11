@@ -53,7 +53,7 @@ import java.util.Scanner;
        System.out.println(calc.substract(1,10.5));
         System.out.println(calc.multiplication(1, 2));
         System.out.println(calc.divide(4, 2));
-       System.out.println(calc.artimetic(2,3,4));
+       //System.out.println(calc.aritmetic(2,3,4));
         System.out.println(calc.module(1,2));
 
 
