@@ -1,8 +1,9 @@
 public class Calculator {
-    public int sum(int parameterVariable, int b){
+    public double sum(double a, double b){
         //      System.out.println(text);
-        return parameterVariable+b;
-
+        return  a + b;
+    //public int sum (parameterVariable a + int b)
+        // return parameterVariable a + b;
     }
     public  double substract(double x, double y) {
         //   System.out.println(text);
@@ -17,21 +18,19 @@ public class Calculator {
     public double divide(double x, double y) {
         return x / y;
     }
-     public double artimetic (double x, double y, double z){
-        return (x + y + z) / 3;
-    }
+     //public double artimetic (double x, double y, double z){
+      //  return (x + y + z) / 3;
+     //}
+     public double aritmetic (double x, double y) {
+         return (x + y) / 2;
+     }
+
 
     public double module (double x, double y){
         return  x % y;
              }
-         //  Scrieti o metoda java, care sa primeasca ca si parametru un numar,
-    //  care sa reprezinte temperatura in Fahrenheit,
-    //  si sa returneze temperatura in Celsius. Formula de calcul este: C = 5/9 * (F -32)
 
-
-    public double temp (double x, double y){
-        return 5/9 *(x - 32) ;
     }
 
-}
+
 
