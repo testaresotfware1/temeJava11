@@ -2,6 +2,13 @@ package AnimalRescuier;
 
 public class Environment {
 
-    String name ="Central Parc";
+    private String name ="Central Parc";
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
