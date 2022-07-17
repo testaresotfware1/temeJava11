@@ -4,29 +4,40 @@ public class AppMain {
     public static void main(String[] args) {
         Dog ralph =  new Dog();
         System.out.println(ralph.getName());
-        ralph.setName("asda");
+        ralph.setName("Ralph");
         ralph.play();
 
+        Dog rex= new Dog();
+        rex.setName("Rex");
+        System.out.println(rex.getName());
+        rex.play();
+
+        Dog grivey =new Dog();
+        grivey.setName("Grivey");
+        grivey.eat();
+
+
+
         System.out.println(ralph.getAge());
-        ralph.setAge(5);
+        ralph.setAge(10);
         System.out.println(ralph.getRase());
-        ralph.setRase("qwe");
+        ralph.setRase("Buldog");
         System.out.println(ralph.getColor());
-        ralph.setColor("asd");
+        ralph.setColor("gray");
         System.out.println(ralph.getWeight());
-        ralph.setWeight(5.5);
+        ralph.setWeight(10.5);
         System.out.println(ralph.getheightCm());
-        ralph.setheightCm(2);
+        ralph.setheightCm(20);
         System.out.println(ralph.getLevelOfHealth());
-        ralph.setLevelOfHealth(2);
+        ralph.setLevelOfHealth(9);
         System.out.println(ralph.getFeelingHungry());
-        ralph.setFeelingHungry(3);
+        ralph.setFeelingHungry(7);
         System.out.println(ralph.getMoodLevel());
-        ralph.setMoodLevel(3);
+        ralph.setMoodLevel(8);
         System.out.println(ralph.getFavFood());
-        ralph.setFavFood("asd");
+        ralph.setFavFood("bone");
         System.out.println(ralph.getFavActivity());
-        ralph.setFavActivity("asdf");
+        ralph.setFavActivity("playing");
        ralph.eat();
        ralph.sleep();
        ralph.speak();
@@ -34,28 +45,28 @@ public class AppMain {
 
        Child tudu =new Child();
         System.out.println(tudu.getName());
-        tudu.setName(" a");
+        tudu.setName("Tudor");
 
         System.out.println(tudu.getAge());
-        tudu.setAge(5);
+        tudu.setAge(3);
         System.out.println(tudu.getMoney());
-        tudu.setMoney(10.5);
+        tudu.setMoney(25);
         System.out.println(tudu.getColorEye());
-        tudu.setColorEye("asz");
+        tudu.setColorEye("blue");
         System.out.println(tudu.getWeight());
-        tudu.setWeight(20);
+        tudu.setWeight(15.4);
         System.out.println(tudu.getHeightCm());
-        tudu.setHeightCm(23);
+        tudu.setHeightCm(100);
         System.out.println(tudu.getLevelOfHealth());
-        tudu.setLevelOfHealth(9);
+        tudu.setLevelOfHealth(10);
         System.out.println(tudu.getFeelingHungry());
-        tudu.setFeelingHungry(7);
+        tudu.setFeelingHungry(9);
         System.out.println(tudu.getMoodLevel());
-        tudu.setMoodLevel(6);
+        tudu.setMoodLevel(8);
         System.out.println(tudu.getFavFood());
-        tudu.setFavFood("azxc");
+        tudu.setFavFood("apte");
         System.out.println(tudu.getFavActivity());
-        tudu.setFavActivity("asdfg");
+        tudu.setFavActivity("playing");
         tudu.eat();
         tudu.sleep();
         tudu.speak();
@@ -63,35 +74,35 @@ public class AppMain {
 
         Food  food= new Food();
         System.out.println(food.getName());
-        food.setName("q");
+        food.setName("Fooddog");
         System.out.println(food.getPriceEuro());
-        food.setPriceEuro(10.5);
+        food.setPriceEuro(50.5);
         System.out.println(food.getAmountKg());
-        food.setAmountKg(2.5);
+        food.setAmountKg(2);
         System.out.println(food.getAvailability());
-        food.setAvailability(3.3);
+        food.setAvailability(2);
 
         Vet vet = new Vet();
         System.out.println(vet.getName());
-                vet.setName("sas");
+                vet.setName("Dogdoctor");
         System.out.println(vet.getSpecialization());
-        vet.setSpecialization("asdfg");
+        vet.setSpecialization("rats");
         System.out.println(vet.getColorEye());
-        vet.setColorEye("as");
+        vet.setColorEye("green");
         System.out.println(vet.getWeight());
-        vet.setWeight(336);
+        vet.setWeight(88);
         System.out.println(vet.getHeightCm());
-        vet.setHeightCm(25);
+        vet.setHeightCm(180);
         System.out.println(vet.getLevelOfHealth());
-        vet.setLevelOfHealth(8);
+        vet.setLevelOfHealth(10);
         System.out.println(vet.getFeelingHungry());
-        vet.setFeelingHungry(8);
+        vet.setFeelingHungry(9);
         System.out.println(vet.getMoodLevel());
-        vet.setMoodLevel(5);
+        vet.setMoodLevel(8);
         System.out.println(vet.getFavFood());
-        vet.setFavFood("asf");
+        vet.setFavFood("ciocolata");
         System.out.println(vet.getFavActivity());
-        vet.setFavActivity("qwert");
+        vet.setFavActivity("working");
 
 
         vet.eat();
@@ -101,7 +112,7 @@ public class AppMain {
 
         Environment envi = new Environment();
         System.out.println(envi.getName());
-        envi.setName("asdfg");
+        envi.setName("Central Parc");
 
 
 

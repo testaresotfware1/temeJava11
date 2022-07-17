@@ -1,21 +1,27 @@
 package AnimalRescuier;
 
 public class Dog {
-    private int age = 10;
-    private String rase = "buldog";
-    private String name ="Ralph";
-    private String color= "gray";
-    private double weight = 10.5;
-    private int heightCm= 20;
-    private int levelOfHealth= 9;
-    private int feelingHungry= 7;
-    private int moodLevel= 8;
-    private String favFood= "bone";
-    private String favActivity= "playing";
+    private int age ;
+    private String rase ;
+    private String name ;
+    private String color;
+    private double weight ;
+    private int heightCm;
+    private int levelOfHealth;
+    private int feelingHungry;
+    private int moodLevel;
+    private String favFood;
+    private String favActivity;
+
+
+
+
+
+
+
 
 
     public String getName(){
-
         return name;
     }
    // public void setName(String dogname){

@@ -1,17 +1,17 @@
 package AnimalRescuier;
 
 public class Child {
-   private String name ="Tudor";
-    private double money = 25;
-    private int age = 3;
-    private String colorEye= "blue";
-    private double weight = 15.4;
-    private int heightCm= 100;
-    private int levelOfHealth= 10;
-    private int feelingHungry= 9;
-    private int moodLevel= 8;
-    private String favFood= "apte";
-    private String favActivity= "playing";
+   private String name ;
+    private double money ;
+    private int age ;
+    private String colorEye;
+    private double weight ;
+    private int heightCm;
+    private int levelOfHealth;
+    private int feelingHungry;
+    private int moodLevel;
+    private String favFood;
+    private String favActivity;
 
     public String getName(){
         return name;    }

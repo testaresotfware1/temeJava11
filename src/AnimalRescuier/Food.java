@@ -2,10 +2,10 @@ package AnimalRescuier;
 
 public class Food {
 
-    private String name ="Fooddog";
-    private double priceEuro = 50.5 ;
-    private double amountKg = 2;
-    private double availability = 2;
+    private String name ;
+    private double priceEuro ;
+    private double amountKg ;
+    private double availability ;
 
     public String getName(){
         return name;    }

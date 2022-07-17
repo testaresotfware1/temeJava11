@@ -2,7 +2,7 @@ package AnimalRescuier;
 
 public class Environment {
 
-    private String name ="Central Parc";
+    private String name ;
 
     public String getName() {
         return name;
