@@ -192,11 +192,17 @@ public class LogicalOperations {
     }
 
     // public void getAverageForEvenInInterval(int start, int finish) {
-    //   while (start <= finish) {
-    //       start++;
-    //       System.out.println(start);
+    // int sum= 0;
+    // double count= 0;
+    //while(start < finish){
+    //   if(start %2 !=0){
+    //   sum= sum+start;
+    //   count++;
     //   }
+    //start++;
     //}
+    //return sum/count;
+//}
 
 
     public int printToHundred1(int start, int finish) {
@@ -209,9 +215,9 @@ public class LogicalOperations {
 
 
     public int printToMinusHundred1(int start, int finish) {
-        while (start < finish) {
+        while (start >= -finish) {
             System.out.println(start);
-            start++;
+            start--;
         }
         return start++;
     }
@@ -226,14 +232,15 @@ public class LogicalOperations {
             y++;
         }
     }
+
     public void countBetween4(int x, int y) {
         if (x < y) {
-            while (x < y) {
+            while (x <= y) {
                 System.out.println(x);
                 x++;
             }
         } else if (y < x) {
-            while (y < x) {
+            while (y <= x) {
                 y++;
                 System.out.println(y);
             }
@@ -241,54 +248,64 @@ public class LogicalOperations {
             System.out.println("Numbers are equal!");
         }
 
+    }
 
 
+    public void displayEvenNumbersWhile() {
+        int start = 1;
+        while (start <= 100) {
+            start++;
+            if (start % 2 == 0) {
+                System.out.println(start);
 
-        //public void displayOddNumbers1() {
-         //   int x =1;
-          //  while(x<=100){
-          //      x++;
-           //     if(x % 2 !=0){
-           //         System.out.println(x);
-            //    }
-           // }
-        }
-
-
-        public void displayEvenNumbers(int start,int finish) {
-            while (start<= finish ) {
-                if (start % 2 == 0) {
-                    System.out.println(start);
-                    start++;
-                }
             }
         }
+    }
+
+    public void oddNumbersWhile() {
+
+        int number = 1;
+
+        while (number <= 100) {
+
+            number++;
+
+            if (number % 2 != 0) {
+
+                System.out.println(number);
+
+            }
+
+        }
+
+    }
+
 
     public double getAverageInIntervalEx8(int start, int finish) {
         int sum = 0;
         double count = 0;
         while (start <= finish) {
-            if(start % 7 ==0)
-            sum = sum + start;
+            if (start % 7 == 0)
+                sum = sum + start;
             start++;
             count++;
         }
         return (sum / count);
     }
 
-    public void Fibonacci(){
-        int i=1, n=20, firstnumber=0,secondnumber= 1;
-        System.out.println("Fibonacci series till"+ n + "numbers");
-        while(i<=n){
+    public void Fibonacci() {
+        int i = 1, n = 20, firstnumber = 0, secondnumber = 1;
+        System.out.println("Fibonacci series till" + n + "numbers");
+        while (i <= n) {
             System.out.println(firstnumber + " ");
-            int nextnumber= firstnumber + secondnumber;
-            firstnumber= secondnumber;
-            secondnumber= nextnumber;
+            int nextnumber = firstnumber + secondnumber;
+            firstnumber = secondnumber;
+            secondnumber = nextnumber;
             i++;
         }
     }
 
-    public void cozalozawoza(){
+    public void cozalozawoza() {
         int i = 1;
 
         while (i <= 110) {
@@ -314,9 +331,140 @@ public class LogicalOperations {
             }
             i++;
         }
-    }
 
     }
+
+    public int[] populateArrayUpToNumber(int number) {
+        int[] array = new int[number];
+
+        //array[0]=1;
+        //array[1]=2;
+        for (int i = 0; i <= array.length - 1; i++) {
+            array[i] = i + 1;
+
+        }
+        return array;
+    }
+
+    public void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+    }
+
+    public double getAverageFromArray(int[] array) {
+        double sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+
+        }
+        return sum / array.length;
+    }
+
+
+    public int[] getEvenArrayToHundred(int[] evenArray) {
+        int j = 0;
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                evenArray[j] = i;
+                j++;
+            }
+        }
+        return evenArray;
+
+    }
+
+
+    public boolean checkInArray(String[] arrString, String input) {
+        for (int i = 0; i < arrString.length; i++) {
+            if (arrString[i].equals(input)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public int getPositionInArray(int[] Numbers, int nr) {
+        for (int i = 0; i < Numbers.length; i++) {
+            if (Numbers[i] == nr) {
+                return i;
+            }
+        }
+        return 0;
+
+    }
+    public void drawLines() {
+        char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+        for (int i = 0; i <= 10; i++) {
+            System.out.println(line);
+        }
+
+
+        public int[] removeNrFromArray(int[] myArray, int nr) {
+            int[] secondArray = new int[myArray.length];
+            int j = 0;
+            for (int i = 0; i < myArray.length; i++) {
+                if (myArray[i] == nr)
+                    continue;
+                secondArray[j++] = myArray[i];
+            }
+            int[] finArray = new int[j];
+            for (int i = 0; i < j; i++)
+                finArray[i] = secondArray[i];
+            return finArray;
+        }
+
+        public int getSecondSmallestNrInArray(int[] myArray) {
+            int temporary = 0;
+            for(int i = 0; i< myArray.length;i++){
+                for(int j = i + 1;j<myArray.length;j++){
+                    if(myArray[i] > myArray[j]){
+                        temporary = myArray[j];
+                        myArray[j] = myArray[i];
+                        myArray[i] = temporary;
+                    }
+                }
+            }
+            return myArray[1];
+        }
+
+        public int[] copyArray(int[] firstArray, int[] emptyArray) {
+            for (int i = 0, j = 0; i < firstArray.length; i++) {
+                emptyArray[j] = firstArray[i];
+                j++;
+            }
+            return emptyArray;
+        }
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
