@@ -1,36 +1,33 @@
-package AnimalRescuier;
+package AnimalRescuier.people;
 
-public class Vet {
+public class People  {
 
-    private String name ="DogDoctor";
-    private String specialization =  "rats";
-
-    private int age = 33;
-    private String colorEye= "green";
-    private double weight = 88;
-    private int heightCm= 180;
-    private int levelOfHealth= 10;
-    private int feelingHungry= 9;
-    private int moodLevel= 8;
-    private String favFood= "ciocolata";
-    private String favActivity= "working";
+    private String name ;
+    private double money ;
+    private int age ;
+    private String colorEye;
+    private double weight ;
+    private int heightCm;
+    private int levelOfHealth;
+    private int feelingHungry;
+    private int moodLevel;
+    private String favFood;
+    private String favActivity;
 
     public String getName(){
         return name;    }
     public void setName(String name) {
         this.name = name;    }
 
-    public String getSpecialization(){
-        return specialization;
-    }
-public void  setSpecialization(String specialization){
-        this.specialization= specialization;
-}
     public int getAge() {
         return age;     }
     public void setAge(int age) {
         this.age = age;     }
 
+    public double getMoney() {
+        return money;     }
+    public void setMoney(double money) {
+        this.money = money;     }
 
     public String getColorEye(){
         return colorEye;    }
@@ -77,28 +74,19 @@ public void  setSpecialization(String specialization){
         this.favActivity=favActivity;    }
 
 
-
-
-
-
-
-
-
-
     public void eat(){
-        System.out.println("eating fish");
+        System.out.println("eating milk");
     }
 
     public void sleep(){
-        System.out.println("Snores");
+        System.out.println("not Snores");
 
     }
     public void speak(){
-        System.out.println("pisi");
+        System.out.println("mami");
     }
     public void play() {
-        System.out.println("Playing NFS");
-
+        System.out.println("Playing  traseu");
 
     }
 

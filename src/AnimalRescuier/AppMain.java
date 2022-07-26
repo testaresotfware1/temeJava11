@@ -1,5 +1,12 @@
 package AnimalRescuier;
 
+import AnimalRescuier.Animals.Duck;
+import AnimalRescuier.Animals.dog.Dog;
+import AnimalRescuier.enviroment.Environment;
+import AnimalRescuier.people.Child;
+import AnimalRescuier.food.Food;
+import AnimalRescuier.vet.Vet;
+
 public class AppMain {
     public static void main(String[] args) {
         Dog ralph =  new Dog();
@@ -15,6 +22,10 @@ public class AppMain {
         Dog grivey =new Dog();
         grivey.setName("Grivey");
         grivey.eat();
+
+        Duck ducky = new Duck();
+        //ducky.setname("Ducky");
+
 
 
 
@@ -72,7 +83,7 @@ public class AppMain {
         tudu.speak();
         tudu.play();
 
-        Food  food= new Food();
+        Food food= new Food();
         System.out.println(food.getName());
         food.setName("Fooddog");
         System.out.println(food.getPriceEuro());

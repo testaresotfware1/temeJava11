@@ -1,4 +1,4 @@
-package AnimalRescuier;
+package AnimalRescuier.food;
 
 public class Food {
 

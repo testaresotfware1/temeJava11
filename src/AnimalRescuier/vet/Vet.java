@@ -1,8 +1,10 @@
-package AnimalRescuier;
+package AnimalRescuier.vet;
 
-public class Child {
-   private String name ;
-    private double money ;
+public class Vet {
+
+    private String name ;
+    private String specialization ;
+
     private int age ;
     private String colorEye;
     private double weight ;
@@ -18,15 +20,17 @@ public class Child {
     public void setName(String name) {
         this.name = name;    }
 
+    public String getSpecialization(){
+        return specialization;
+    }
+public void  setSpecialization(String specialization){
+        this.specialization= specialization;
+}
     public int getAge() {
         return age;     }
     public void setAge(int age) {
         this.age = age;     }
 
-    public double getMoney() {
-        return money;     }
-    public void setMoney(double money) {
-        this.money = money;     }
 
     public String getColorEye(){
         return colorEye;    }
@@ -73,19 +77,28 @@ public class Child {
         this.favActivity=favActivity;    }
 
 
+
+
+
+
+
+
+
+
     public void eat(){
-        System.out.println("eating milk");
+        System.out.println("eating fish");
     }
 
     public void sleep(){
-        System.out.println("not Snores");
+        System.out.println("Snores");
 
     }
     public void speak(){
-        System.out.println("mami");
+        System.out.println("pisi");
     }
     public void play() {
-        System.out.println("Playing  traseu");
+        System.out.println("Playing NFS");
+
 
     }
 

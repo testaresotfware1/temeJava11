@@ -1,4 +1,4 @@
-package AnimalRescuier;
+package AnimalRescuier.enviroment;
 
 public class Environment {
 

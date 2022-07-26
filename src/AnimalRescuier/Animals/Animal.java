@@ -1,6 +1,6 @@
-package AnimalRescuier;
+package AnimalRescuier.Animals;
 
-public class Dog {
+public class Animal {
     private int age ;
     private String rase ;
     private String name ;
@@ -13,22 +13,14 @@ public class Dog {
     private String favFood;
     private String favActivity;
 
-
-
-
-
-
-
-
-
     public String getName(){
         return name;
     }
-   // public void setName(String dogname){
+    // public void setName(String dogname){
     //    name=dogname;
     //}
     public void setName(String name){
-                this.name=name;    }
+        this.name=name;    }
 
     public int getAge(){
         return age;    }
@@ -101,5 +93,9 @@ public class Dog {
         System.out.println("Waving the tail");
     }
 
-    }
+}
+
+
+
+
 
