@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class LogicalOperations {
 
 
@@ -400,7 +402,7 @@ public class LogicalOperations {
         }
 
 
-        public int[] removeNrFromArray(int[] myArray, int nr) {
+        /*public int[] removeNrFromArray(int[] myArray, int nr) {
             int[] secondArray = new int[myArray.length];
             int j = 0;
             for (int i = 0; i < myArray.length; i++) {
@@ -434,7 +436,82 @@ public class LogicalOperations {
                 j++;
             }
             return emptyArray;
+        } */
+
+        //public boolean isValueInArray(String[] array, String value){
+         //   for (int i=0;i< array.length;i++){
+          //      if(array[i].equals(value)){
+           //         return true;
+//
+           //     }
+          //  }
+          //  return false;
         }
+
+        //LABORATOR6
+              public void printNumbersBackwardsFromList(List<Integer> myList)
+              {
+
+                  for(int i =myList.size()- 1;i>=0;i--){
+                      System.out.println(myList.get(i));
+                  }
+              }
+
+              public void printListEx1(List<Integer>myList){
+             for(int i =0; i< myList.size();i++){
+                 System.out.println(myList.get(i));
+             }
+              }
+
+              public void addNumberToListEx2(List<Integer>myList, int number){
+        myList.add(number);
+                      }
+
+    public void printListByIndexEx3(List<Integer> myList, int position){
+
+        for (int i = position;i < myList.size(); i++){
+
+            System.out.println(myList.get(i));
+        }
+    }
+
+    public void addStringToMyListEx5(List<String>myList,int index, String text){
+        myList.add(index,text);
+    }
+
+    public void addNumbertoFirstIndexEx6(List<Integer> myList, int number){
+        myList.add(0,number);
+
+    }
+
+    public void printListIndexAndElementsEx7(List<Integer> myList){
+
+        for (int i = 0; i<myList.size(); i++)
+
+            System.out.println("Index "+i+" are elementul "+myList.get(i));
+
+    }
+
+    public int getBiggestValueFromListEx9 (List<Integer> myList){
+
+        int biggest = myList.get(0);
+
+        for (int i=0 ; i<myList.size(); i++){
+
+            if (myList.get(i)>biggest){
+
+                biggest = myList.get(i);
+
+            }
+
+        }
+
+        return biggest;
+
+    }
+
+
+
 
 
     }
@@ -449,7 +526,7 @@ public class LogicalOperations {
 
 
 
-}
+
 
 
 
