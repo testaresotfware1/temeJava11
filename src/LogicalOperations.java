@@ -395,6 +395,7 @@ public class LogicalOperations {
         return 0;
 
     }
+
     public void drawLines() {
         char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
         for (int i = 0; i <= 10; i++) {
@@ -439,66 +440,65 @@ public class LogicalOperations {
         } */
 
         //public boolean isValueInArray(String[] array, String value){
-         //   for (int i=0;i< array.length;i++){
-          //      if(array[i].equals(value)){
-           //         return true;
+        //   for (int i=0;i< array.length;i++){
+        //      if(array[i].equals(value)){
+        //         return true;
 //
-           //     }
-          //  }
-          //  return false;
+        //     }
+        //  }
+        //  return false;
+    }
+
+    //LABORATOR6
+    public void printNumbersBackwardsFromList(List<Integer> myList) {
+
+        for (int i = myList.size() - 1; i >= 0; i--) {
+            System.out.println(myList.get(i));
         }
+    }
 
-        //LABORATOR6
-              public void printNumbersBackwardsFromList(List<Integer> myList)
-              {
+    public void printListEx1(List<Integer> myList) {
+        for (int i = 0; i < myList.size(); i++) {
+            System.out.println(myList.get(i));
+        }
+    }
 
-                  for(int i =myList.size()- 1;i>=0;i--){
-                      System.out.println(myList.get(i));
-                  }
-              }
-
-              public void printListEx1(List<Integer>myList){
-             for(int i =0; i< myList.size();i++){
-                 System.out.println(myList.get(i));
-             }
-              }
-
-              public void addNumberToListEx2(List<Integer>myList, int number){
+    public void addNumberToListEx2(List<Integer> myList, int number) {
         myList.add(number);
-                      }
+    }
 
-    public void printListByIndexEx3(List<Integer> myList, int position){
+    public void printListByIndexEx3(List<Integer> myList, int position) {
 
-        for (int i = position;i < myList.size(); i++){
+        for (int i = position; i < myList.size(); i++) {
 
             System.out.println(myList.get(i));
         }
     }
 
-    public void addStringToMyListEx5(List<String>myList,int index, String text){
-        myList.add(index,text);
+    public void addStringToMyListEx5(List<String> myList, int index, String text) {
+        myList.add(index, text);
     }
 
-    public void addNumbertoFirstIndexEx6(List<Integer> myList, int number){
-        myList.add(0,number);
-
-    }
-
-    public void printListIndexAndElementsEx7(List<Integer> myList){
-
-        for (int i = 0; i<myList.size(); i++)
-
-            System.out.println("Index "+i+" are elementul "+myList.get(i));
+    public void addNumbertoFirstIndexEx6(List<Integer> myList, int number) {
+        myList.add(0, number);
 
     }
 
-    public int getBiggestValueFromListEx9 (List<Integer> myList){
+    public void printListIndexAndElementsEx7(List<Integer> myList) {
+
+        for (int i = 0; i < myList.size(); i++)
+
+            System.out.println("Index " + i + " are elementul " + myList.get(i));
+
+    }
+
+    public int getBiggestValueFromListEx9(List<Integer> myList) {
 
         int biggest = myList.get(0);
 
-        for (int i=0 ; i<myList.size(); i++){
+        for (int i = 0; i < myList.size(); i++) {
 
-            if (myList.get(i)>biggest){
+            if (myList.get(i) > biggest) {
 
                 biggest = myList.get(i);
 
@@ -510,11 +510,48 @@ public class LogicalOperations {
 
     }
 
-
-
-
-
+    public int getHighestNumber(List<Integer> list) {
+        int max = list.get(0);
+        for (int x : list) {
+            if (x > max) {
+                max = x;
+            }
+        }
+        return max;
     }
+
+    //7.5.In clasa LogicalOp, creati o metoda care sa primeasca un array de numere ca si parametru, si un numar.
+    // Fara a folosi conditii, si folosind un try-catch, afisati valoarea de pe pozitia numarului primit,
+    // iar daca valoarea numarului este mai mare decat numarul de pozitii din array, afisati textul: "Inside catch, number too large".
+
+    public void readArrayIndex(int[] array, int number){
+        try{
+            System.out.println(array[number]);
+        }catch (ArrayIndexOutOfBoundsException e){
+            System.out.println("Inside catch, number too large");
+        }
+    }
+    //7.6. In clasa LogicalOp, creati o metoda  'wait()'.
+    // Metoda sa nu returneze nimic, dar sa primeasca un parametru de tip int. In interiorul ei,
+    // tratati metoda Thread.sleep(), astfel incat metoda noastra sa primeasca valoarea in secunde, cat sa astepte.
+    // Ex: wait(5) -> asteapta 5 secunde.
+    public void wait(int seconds){
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
+
+}
+
+
+
+
+
 
 
 

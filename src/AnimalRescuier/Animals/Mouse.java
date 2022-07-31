@@ -4,8 +4,8 @@ public class Mouse extends Animal {
     public void speak(){
         System.out.println("chirchit");
 
-        public void play(){
-            System.out.println("run");
-        }
+        //public void play(){
+         //   System.out.println("run");
+       // }
     }
 }

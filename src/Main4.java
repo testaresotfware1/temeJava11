@@ -46,12 +46,13 @@ public class Main4 {
        // op.countBetween2(5,3);
         //op.countBetween4(2,3);
 
-       // op.displayOddNumbers1(1,100);
-        //op.displayEvenNumbers(1,100);
+
+        //op.displayEvenNumbersWhile();
+        //op.oddNumbersWhile();
 
        // System.out.println(op.getAverageInIntervalEx8(1,100));
        //op.Fibonacci();
-        op.cozalozawoza();
+        //op.cozalozawoza();
 
 
 
