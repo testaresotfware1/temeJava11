@@ -1,10 +1,21 @@
+import java.util.List;
+
 public class Calculator {
     public double sum(double a, double b){
-        //      System.out.println(text);
+        //     System.out.println(text);
         return  a + b;
     //public int sum (parameterVariable a + int b)
         // return parameterVariable a + b;
-    }
+
+        //public int sum(int parameterVariable, int b,int c){
+         //   return parameterVariable a+b+b;
+
+         //   public double sum(List<Integer> list){
+         //       return 0;
+          //  }
+        }
+
+
     public  double substract(double x, double y) {
         //   System.out.println(text);
         return x - y;

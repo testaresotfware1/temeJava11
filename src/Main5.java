@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main5 {
 
     public static void main(String[] args) {
@@ -8,9 +10,19 @@ public class Main5 {
        // System.out.println(op.getAverageFromArray(secondArray));
        // System.out.println(op.Array7(new String[]);
        // int[]evenArray= op.getEvenArrayToHundred (100);
-        op.drawLines();
+       // op.drawLines();
+
+      //  String[] myArrayOfString={"x","y","z"};
+       // System.out.println();
+       // if(op.isValueInArray(myArrayOfString, value: "z"))
+      //      System.out.println("Valoarea e in array");
+      //  else
+       // System.out.println("Valoarea nu e in array");
+
 
 
 
     }
+
+
 }

@@ -102,7 +102,11 @@ public class Main6 {
             myListOfInt.add(i);
         }
 
-        System.out.println(op.getBiggestValueFromListEx9());
+        //System.out.println(op.getBiggestValueFromListEx9());
+
+       // Calculator calc= new Calculator();
+       // calc.sum(myList);
+
 
 
 
