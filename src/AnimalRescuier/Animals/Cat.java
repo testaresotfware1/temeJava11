@@ -1,13 +1,28 @@
 package AnimalRescuier.Animals;
 
-public class Cat extends Animal {
+public  abstract class Cat extends Animal {
 
-    public void speak(){
-        System.out.println("Miau!");
+    @Override
+    public void eat() {
+        System.out.println("eating purrina   ");
+
     }
+
+    @Override
+    public void sleep() {
+
+    }
+
+    public abstract void speak();
+
 
     public  void play(){
         System.out.println("catch");
+    }
+
+    @Override
+    public void waveTail() {
+
     }
 
 

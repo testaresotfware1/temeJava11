@@ -1,6 +1,7 @@
 package AnimalRescuier;
 
 import AnimalRescuier.Animals.Duck;
+import AnimalRescuier.Animals.Mouse;
 import AnimalRescuier.Animals.Siamess;
 import AnimalRescuier.Animals.dog.Dog;
 import AnimalRescuier.Animals.dog.Labrador;
@@ -134,6 +135,19 @@ public class AppMain {
         Environment envi = new Environment();
         out.println(envi.getName());
         envi.setName("Central Parc");
+
+
+        Siamess tobby= new Siamess();
+        tobby.eat();
+        tobby.speak();
+
+        Mouse mousee= new Mouse();
+        mousee.play();
+        mousee.eat();
+
+        Labrador doru= new Labrador();
+        doru.sleep();
+        doru.eat();
 
 
 

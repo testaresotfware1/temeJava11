@@ -1,6 +1,6 @@
 package AnimalRescuier.Animals;
 
-public class Animal {
+public abstract class  Animal {
     private int age ;
     private String rase ;
     private String name ;
@@ -74,24 +74,17 @@ public class Animal {
     public void setFavActivity(String favActivity) {
         this.favActivity = favActivity;     }
 
-    public void eat(){
-        System.out.println("eating dog food");
-    }
+    public abstract  void eat();
 
-    public void sleep(){
-        System.out.println("Snores...zzz");
 
-    }
-    public void speak(){
-        System.out.println("Ham");
-    }
-    public void play(){
-        System.out.println("Playing fetch");
+    public abstract void sleep();
 
-    }
-    public void waveTail(){
-        System.out.println("Waving the tail");
-    }
+    public abstract void speak();
+
+    public abstract void play();
+
+    public abstract void waveTail();
+
 
 }
 
